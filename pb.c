@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 
 #define LUCKY_NUMBER 7
 #define MAX_WHITE_BALL 59
@@ -45,7 +46,7 @@ int main(int argc, char** argv)
 {
 	int balls[6];
 	int count balls = 0;
-	int favourite = 0; // this should be a bool
+	bool favorite = false; // this should be a bool
 
 	for (int i=1; i<argc; i++)
  	{
@@ -70,7 +71,7 @@ int main(int argc, char** argv)
  		result = result * 2;
  	}
 
- 	if (favourite)
+ 	if (favorite)
  	{
  		result = result * 2;
  	}
@@ -80,7 +81,7 @@ int main(int argc, char** argv)
  	return 0;
 
 usage_error:
- 	fprintf(stderr, "Usage: %s [-favourite] (5 white balls)
+ 	fprintf(stderr, "Usage: %s [-favorite] (5 white balls)
 power_ball\n", argv[0]);
  	return -1;
 }
