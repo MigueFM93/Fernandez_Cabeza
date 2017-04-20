@@ -3,6 +3,7 @@
 #include <string.h>
 #include <stdbool.h>
 
+
 #define LUCKY_NUMBER 7
 #define MAX_WHITE_BALL 59
 #define MAX_POWER_BALL 39
